@@ -1,6 +1,6 @@
-$chatRightOffset: 6vw; // eyeballed
-$chatWidth: 620px; // measured roughly ingame @1080p
-$chatButtonsHeight: 20px; // eyeballed
+$chatRightOffset: 1vw; // eyeballed
+$chatLeftOffset: 5vw;
+$chatButtonsHeight: 30px; // eyeballed
 $userpanelWidth: 160px; // measured ingame @1080p
 
 $channellistWidth: var(--disco-channellist-width); // 240px: default Discord
@@ -9,7 +9,13 @@ $threadWidth: var(--disco-thread-width); //
 $hslHeight: var(--server-container); // from HorizontalServerList
 
 $distance: 20px; // unit of distance for padding etc
-
+$chatWidth: calc(
+    100% -
+        (
+            3 * $distance + $userpanelWidth + $chatLeftOffset + $chatRightOffset + var(--disco-memberslist-width) +
+                var(--disco-channellist-width)
+        )
+);
 // Colours
 $bgOpaque: rgb(var(--disco-accent-color));
 $bgTint: rgb(var(--disco-accent-color) / var(--disco-accent-opacity-heavy));
