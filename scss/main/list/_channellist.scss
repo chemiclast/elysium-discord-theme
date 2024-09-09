@@ -1,0 +1,33 @@
+@use "../../vars" as *;
+
+.sidebar_a4d4d9 {
+    background: $bgTintLight;
+    position: relative;
+    left: $userpanelWidth + $distance;
+    width: $channellistWidth;
+}
+
+// Server channels list
+.container_ee69e0 {
+    $banner-height: calc(($channellistWidth - (2 * 10px) - (2 * 0.5vh)) / 240 * 135);
+
+    // Banner
+    .animatedContainer_fd6364 {
+        height: $banner-height;
+    }
+    // Prevent banner overlapping outer
+    .animatedContainer_fd6364,
+    .bannerImage_fd6364 {
+        transform: none !important;
+    }
+    .bannerImage_fd6364,
+    .bannerImg_fd6364 {
+        width: inherit;
+    }
+    .bannerImg_fd6364 {
+        height: unset;
+    }
+    div[style="height: 12px;"] {
+        height: calc($banner-height - 48px - 84px) !important;
+    }
+}

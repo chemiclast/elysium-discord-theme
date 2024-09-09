@@ -1,0 +1,35 @@
+@forward "./main";
+@forward "./mod";
+@forward "./part";
+@forward "./plugin";
+
+// Discord vars
+:root {
+    --background-primary: none;
+    --background-secondary: none;
+    --background-secondary-alt: none;
+    --background-tertiary: none;
+    --channeltextarea-background: none;
+    --custom-message-margin-left-content-cozy: 40px;
+}
+
+// Theme vars
+:root {
+    --disco-portrait: url("https://saltssaumure.github.io/elysium-discord-theme/assets/img/portrait.avif");
+    --disco-background: url("https://saltssaumure.github.io/elysium-discord-theme/assets/img/revachol.avif");
+    --disco-channellist-width: 360px;
+    --disco-memberslist-width: 240px;
+    --disco-accent-color: 0 0 0;
+    --disco-accent-opacity-heavy: 80%;
+    --disco-accent-opacity-light: 60%;
+}
+
+// ?
+.content_a4d4d9 {
+    justify-content: space-between;
+}
+
+// Remove from flex
+.erd_scroll_detection_container {
+    position: absolute;
+}

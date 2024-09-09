@@ -1,0 +1,31 @@
+@use "../../vars" as *;
+
+// Take avatar of last msg and use as speaker portrait
+.scrollerInner_e2e187 > :is(li, .quotedChatMessage_d5deea):last-of-type .avatar_ec86aa {
+    border-radius: 0;
+    position: fixed;
+    left: unset;
+    right: calc($chatRightOffset + $chatWidth - 40px);
+    top: 20vh;
+    width: 180px;
+    height: 180px;
+    z-index: 1;
+    background: $portraitBg;
+    padding: 60px $distance;
+}
+
+// Hide other avatars
+.scrollerInner_e2e187 > :is(li, .quotedChatMessage_d5deea):not(:last-of-type) .avatar_ec86aa {
+    display: none;
+}
+
+// Hide reply and thread spines
+.repliedMessage_ec86aa::before,
+.hasThread_ec86aa.hasThread_ec86aa::after {
+    display: none;
+}
+
+// Hoists chat above memberlist so avatar appears above memberlist
+.chatContent_a7d72e {
+    z-index: 1;
+}

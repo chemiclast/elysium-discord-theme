@@ -1,0 +1,33 @@
+@use "../../vars" as *;
+@use "../../mixins" as *;
+
+.forumOrHome_ff5f90.forumOrHome_ff5f90,
+.container_a6d69a {
+    background: none;
+}
+
+// Post list
+.list_a6d69a {
+    @include hideScrollbar;
+}
+
+// Thread opened to the side
+.container_d1c246 {
+    position: fixed;
+    top: $hslHeight;
+    bottom: 0;
+    right: $chatRightOffset;
+    background: $chatBg;
+    border-radius: 0;
+    z-index: 100;
+    width: $chatWidth !important;
+
+    .scroller_e2e187 {
+        @include hideScrollbar;
+    }
+}
+
+// Resize thread handle
+.resizeHandle_d1c246 {
+    display: none;
+}

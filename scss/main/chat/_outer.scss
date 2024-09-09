@@ -1,0 +1,29 @@
+@use "../../vars" as *;
+@use "../../mixins" as *;
+
+// Outermost layer of chat with header
+.chat_a7d72e {
+    background: $chatBg;
+    max-width: $chatWidth;
+    right: 0;
+    margin-right: $chatRightOffset;
+
+    &.threadSidebarOpen_a7d72e {
+        border-radius: 0;
+    }
+
+    .scroller_e2e187 {
+        @include hideScrollbar;
+    }
+}
+
+// Header
+.container_e44302 {
+    padding: 8px 24px;
+}
+
+// Header shadow
+.chat_fe669e::before,
+.content_a7d72e::before {
+    display: none;
+}
