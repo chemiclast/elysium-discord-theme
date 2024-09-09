@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 main.container_c2739c {
     width: calc($userpanelWidth + $distance * 2 + $channellistWidth);
     right: 0;
