@@ -3,7 +3,7 @@
 .container_cbd271 {
     position: fixed;
     left: calc($userpanelWidth + $channellistWidth + $distance * 2);
-    top: $hslHeight;
+    top: calc($hslHeight + 30px);
     bottom: 0;
     background: $bgTintLight;
     min-width: $memberlistWidth;

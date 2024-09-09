@@ -2,7 +2,7 @@
 
 // Message box
 .form_a7d72e:has(.buttons_d0696b) {
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 }
 
 // Move message box buttons to mimic inventory tabs at bottom
@@ -11,13 +11,14 @@
     position: fixed;
     top: unset;
     bottom: 0;
-    right: 0;
-    width: calc($chatWidth + $chatRightOffset);
-    padding-left: 60px;
+    right: calc($chatRightOffset + 5px);
+    width: $chatWidth;
     height: $chatButtonsHeight;
-    gap: 60px;
+    gap: 8vw;
+    justify-content: center;
+    padding-left: 0;
 
-    $iconSize: 40px !important;
+    $iconSize: 24px !important;
 
     // GIft, gif, sticker
     .lottieIcon_f73ef7,
@@ -36,4 +37,8 @@
     .separator_a06035::before {
         display: none;
     }
+}
+
+.channelAppLauncher_df39bd {
+    display: none;
 }

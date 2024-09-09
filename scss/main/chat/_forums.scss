@@ -11,6 +11,13 @@
     @include hideScrollbar;
 }
 
+.chat_a7d72e.threadSidebarOpen_a7d72e {
+    right: calc($chatRightOffset + $chatWidth - 1vw);
+    position: absolute;
+    width: calc($chatWidth / 2 + 1vw + $chatLeftOffset);
+    z-index: 10;
+}
+
 // Thread opened to the side
 .container_d1c246 {
     position: fixed;
@@ -20,7 +27,7 @@
     background: $chatBg;
     border-radius: 0;
     z-index: 100;
-    width: $chatWidth !important;
+    width: calc($chatWidth - 1vw) !important;
 
     .scroller_e2e187 {
         @include hideScrollbar;

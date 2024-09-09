@@ -68,14 +68,14 @@
                 display: none;
             }
 
+            rect:first-of-type {
+                display: none;
+            }
+
             // Status indicator
             svg {
                 overflow: visible;
-                opacity: 1;
-                rect:first-of-type {
-                    x: -10;
-                    y: 10;
-                }
+                opacity: 0.8;
             }
         }
     }
