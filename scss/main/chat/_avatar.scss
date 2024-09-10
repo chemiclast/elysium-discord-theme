@@ -1,13 +1,13 @@
 @use "../../vars" as *;
 
 // Take avatar of last msg and use as speaker portrait
-.scrollerInner_e2e187 > :is(li, .messageListItem_d5deea):last-of-type .avatar_f9f2ca {
+.chat_a7d72e .scrollerInner_e2e187 > :is(li, .messageListItem_d5deea):last-of-type .avatar_f9f2ca {
     border-radius: 0;
     position: fixed;
     left: unset;
     right: calc($chatRightOffset + $chatWidth - 20px);
     top: 250px;
-    width: calc($chatLeftOffset - 5px);
+    width: calc($chatLeftOffset + 15px);
     height: calc($chatLeftOffset + 60px);
     z-index: 1;
     background: $portraitBg;
@@ -15,13 +15,17 @@
     object-fit: cover;
 }
 
+.chat_a7d72e:not(:has(.container_cbd271)) .scrollerInner_e2e187 > :is(li, .messageListItem_d5deea):last-of-type .avatar_f9f2ca {
+    right: calc($chatRightOffset + $chatWidth + $memberlistWidth - 20px);
+}
+
 // Hide other avatars
-.scrollerInner_e2e187 > :is(li, .messageListItem_d5deea):not(:last-of-type) .avatar_f9f2ca {
+.chat_a7d72e .scrollerInner_e2e187 > :is(li, .messageListItem_d5deea .message_d5deea):not(:last-of-type) .avatar_f9f2ca {
     display: none;
 }
 
 // Hide all avatar decorations
-.scrollerInner_e2e187 > :is(li, .messageListItem_d5deea) .avatarDecoration_f9f2ca {
+.chat_a7d72e .scrollerInner_e2e187 > :is(li, .messageListItem_d5deea) .avatarDecoration_f9f2ca {
     display: none;
 }
 
