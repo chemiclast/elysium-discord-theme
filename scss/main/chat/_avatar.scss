@@ -1,7 +1,10 @@
 @use "../../vars" as *;
 
 // Take avatar of last msg and use as speaker portrait
-.chat_a7d72e .scrollerInner_e2e187 > :is(li, .messageListItem_d5deea):nth-last-child(-n + 1 of :has(.avatar_f9f2ca)) .avatar_f9f2ca {
+.chat_a7d72e
+    .scrollerInner_e2e187
+    > :is(li, .messageListItem_d5deea, .backgroundFlash_d5deea):nth-last-child(-n + 1 of :has(.avatar_f9f2ca))
+    .avatar_f9f2ca {
     border-radius: 0;
     position: fixed;
     left: unset;
@@ -18,18 +21,21 @@
 // Direct messages
 .chat_a7d72e:not(:has(.container_cbd271))
     .scrollerInner_e2e187
-    > :is(li, .messageListItem_d5deea):nth-last-child(-n + 1 of :has(.avatar_f9f2ca))
+    > :is(li, .messageListItem_d5deea, .backgroundFlash_d5deea):nth-last-child(-n + 1 of :has(.avatar_f9f2ca))
     .avatar_f9f2ca {
     right: calc($chatRightOffset + $chatWidth + $memberlistWidth - 20px);
 }
 
 // Hide other avatars
-.chat_a7d72e .scrollerInner_e2e187 > :is(li, .messageListItem_d5deea):not(:nth-last-child(-n + 1 of :has(.avatar_f9f2ca))) .avatar_f9f2ca {
+.chat_a7d72e
+    .scrollerInner_e2e187
+    > :is(li, .messageListItem_d5deea, .backgroundFlash_d5deea):not(:nth-last-child(-n + 1 of :has(.avatar_f9f2ca)))
+    .avatar_f9f2ca {
     display: none;
 }
 
 // Hide all avatar decorations
-.chat_a7d72e .scrollerInner_e2e187 > :is(li, .messageListItem_d5deea) .avatarDecoration_f9f2ca {
+.chat_a7d72e .scrollerInner_e2e187 > :is(li, .messageListItem_d5deea, .backgroundFlash_d5deea) .avatarDecoration_f9f2ca {
     display: none;
 }
 
