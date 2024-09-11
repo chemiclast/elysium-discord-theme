@@ -6,7 +6,7 @@
     position: fixed;
     left: unset;
     right: calc($chatRightOffset + $chatWidth - 20px);
-    bottom: 250px;
+    bottom: 150px;
     width: calc($chatLeftOffset + 15px);
     height: calc($chatLeftOffset + 60px);
     z-index: 1;
