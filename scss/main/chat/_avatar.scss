@@ -23,7 +23,7 @@
     .scrollerInner_e2e187
     > :is(li, .messageListItem_d5deea, .backgroundFlash_d5deea):nth-last-child(-n + 1 of :has(.avatar_f9f2ca))
     .avatar_f9f2ca {
-    right: calc($chatRightOffset + $chatWidth + $memberlistWidth - 20px);
+    right: calc($chatRightOffset + $chatWidth + $memberlistWidth - 25px);
 }
 
 // Hide other avatars
