@@ -5,3 +5,15 @@ div.contents_f9f2ca span.timestampVisibleOnHover_f9f2ca {
 div.divider_d5deea span.content_c2654d {
     transform: translateY(-10px);
 }
+
+// Message replies
+.repliedMessage_f9f2ca {
+    left: 44px;
+}
+
+.chat_a7d72e
+    .scrollerInner_e2e187
+    > :is(li, .messageListItem_d5deea, .backgroundFlash_d5deea):not(:nth-last-child(-n + 1 of :has(.avatar_f9f2ca)))
+    h3.header_f9f2ca {
+    left: 20px;
+}

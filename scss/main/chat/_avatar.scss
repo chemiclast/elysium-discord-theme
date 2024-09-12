@@ -8,8 +8,8 @@
     border-radius: 0;
     position: fixed;
     left: unset;
-    right: calc($chatRightOffset + $chatWidth - 20px);
-    bottom: 150px;
+    right: calc($chatRightOffset + $chatWidth - 25px);
+    bottom: 125px;
     width: calc($chatLeftOffset + 15px);
     height: calc($chatLeftOffset + 60px);
     z-index: 1;
@@ -26,12 +26,25 @@
     right: calc($chatRightOffset + $chatWidth + $memberlistWidth - 25px);
 }
 
-// Hide other avatars
+// Make other avatars smaller
 .chat_a7d72e
     .scrollerInner_e2e187
     > :is(li, .messageListItem_d5deea, .backgroundFlash_d5deea):not(:nth-last-child(-n + 1 of :has(.avatar_f9f2ca)))
     .avatar_f9f2ca {
-    display: none;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    left: 40px;
+    top: 4px;
+}
+
+// Adjustment for message replies
+.chat_a7d72e
+    .scrollerInner_e2e187
+    > :is(li, .messageListItem_d5deea, .backgroundFlash_d5deea):not(:nth-last-child(-n + 1 of :has(.avatar_f9f2ca)))
+    :has(.repliedMessage_f9f2ca)
+    .avatar_f9f2ca {
+    top: 26px;
 }
 
 // Hide all avatar decorations
