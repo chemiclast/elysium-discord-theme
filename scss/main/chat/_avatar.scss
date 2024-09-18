@@ -29,9 +29,12 @@
 // Make other avatars smaller
 .chat_a7d72e
     .scrollerInner_e2e187
-    > :is(li, .messageListItem_d5deea, .backgroundFlash_d5deea):not(:nth-last-child(-n + 1 of :has(.avatar_f9f2ca)))
+    > :is(
+        :is(li, .messageListItem_d5deea, .backgroundFlash_d5deea):not(:nth-last-child(-n + 1 of :has(.avatar_f9f2ca))),
+        .groupStart_d5deea
+    )
     .avatar_f9f2ca,
-:is(.searchResult_ddc613, .messagesPopoutWrap_ac90a2, .groupStart_d5deea) .avatar_f9f2ca {
+:is(.searchResult_ddc613, .messagesPopoutWrap_ac90a2) .avatar_f9f2ca {
     display: inline-block;
     width: 16px;
     height: 16px;
@@ -49,6 +52,7 @@
     left: 5px;
 }
 
+// Move avatar in pins
 .messagesPopoutWrap_ac90a2 .contents_f9f2ca .avatar_f9f2ca {
     top: 14px;
     left: 18px;
