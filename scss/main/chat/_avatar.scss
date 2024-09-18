@@ -30,12 +30,23 @@
 .chat_a7d72e
     .scrollerInner_e2e187
     > :is(li, .messageListItem_d5deea, .backgroundFlash_d5deea):not(:nth-last-child(-n + 1 of :has(.avatar_f9f2ca)))
-    .avatar_f9f2ca {
+    .avatar_f9f2ca,
+.searchResult_ddc613 .avatar_f9f2ca {
     display: inline-block;
     width: 16px;
     height: 16px;
     left: 40px;
     top: 4px;
+}
+
+// Move username in search results
+.searchResult_ddc613 .contents_f9f2ca h2.header_f9f2ca {
+    left: 20px;
+}
+
+// Move avatar in search results
+.searchResult_ddc613 .contents_f9f2ca .avatar_f9f2ca {
+    left: 5px;
 }
 
 // Adjustment for message replies
