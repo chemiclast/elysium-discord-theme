@@ -31,7 +31,7 @@
     .scrollerInner_e2e187
     > :is(li, .messageListItem_d5deea, .backgroundFlash_d5deea):not(:nth-last-child(-n + 1 of :has(.avatar_f9f2ca)))
     .avatar_f9f2ca,
-.searchResult_ddc613 .avatar_f9f2ca {
+:is(.searchResult_ddc613, .messagesPopoutWrap_ac90a2, .groupStart_d5deea) .avatar_f9f2ca {
     display: inline-block;
     width: 16px;
     height: 16px;
@@ -49,6 +49,11 @@
     left: 5px;
 }
 
+.messagesPopoutWrap_ac90a2 .contents_f9f2ca .avatar_f9f2ca {
+    top: 14px;
+    left: 18px;
+}
+
 // Adjustment for message replies
 .chat_a7d72e
     .scrollerInner_e2e187
@@ -59,7 +64,7 @@
 }
 
 // Hide all avatar decorations
-.chat_a7d72e .scrollerInner_e2e187 > :is(li, .messageListItem_d5deea, .backgroundFlash_d5deea) .avatarDecoration_f9f2ca {
+.contents_f9f2ca .avatarDecoration_f9f2ca {
     display: none;
 }
 
