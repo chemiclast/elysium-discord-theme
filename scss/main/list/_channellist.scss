@@ -1,9 +1,13 @@
 @use "../../vars" as *;
 
-div.content_a4d4d9 .sidebar_a4d4d9:has(nav.container_ee69e0) {
+.sidebar_a4d4d9 {
     background: $bgTintLight;
     position: relative;
     left: $userpanelWidth + $distance;
+    width: $channellistWidth;
+}
+
+div.content_a4d4d9 .sidebar_a4d4d9:has(nav.container_ee69e0) {
     width: $channellistWidth !important;
 }
 
