@@ -1,5 +1,5 @@
 // Fix timestamp alignment
-div.contents_f9f2ca span.timestampVisibleOnHover_f9f2ca {
+div.contents_c19a55 span.timestampVisibleOnHover_c19a55 {
     transform: translateX(-20px);
 }
 div.divider_d5deea span.content_c2654d {
@@ -7,25 +7,25 @@ div.divider_d5deea span.content_c2654d {
 }
 
 // Message replies
-.repliedMessage_f9f2ca {
+.repliedMessage_c19a55 {
     left: 44px;
 }
 
-.chat_a7d72e
-    .scrollerInner_e2e187
+.chat_f75fb0
+    .scrollerInner__36d07
     > :is(
-        :is(li, .messageListItem_d5deea, .backgroundFlash_d5deea):not(:nth-last-child(-n + 1 of :has(.avatar_f9f2ca))),
-        div.groupStart_d5deea
+        :is(li, .messageListItem__5126c, .backgroundFlash_d5deea):not(:nth-last-child(-n + 1 of :has(.avatar_c19a55))),
+        div.groupStart__5126c
     )
-    h3.header_f9f2ca {
+    h3.header_c19a55 {
     left: 20px;
 }
 
-.chat_a7d72e {
+.chat_f75fb0 {
     --background-primary: none;
 }
 
 // Search results
-.searchResult_ddc613 .wrapper_f9f2ca {
+.searchResult__02a39 .wrapper_c19a55 {
     padding-left: 5px;
 }

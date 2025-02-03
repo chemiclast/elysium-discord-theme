@@ -2,7 +2,7 @@
 @use "../../mixins" as *;
 
 // Outermost layer of chat with header
-.chat_a7d72e {
+.chat_f75fb0 {
     background: $chatBg;
     max-width: $chatWidth;
     right: 0;
@@ -19,7 +19,7 @@
 }
 
 // Direct messages
-.chat_a7d72e:not(:has(.container_cbd271)) {
+.chat_f75fb0:not(:has(:is(.container_c8ffbb, .container__7641b))) {
     max-width: calc($chatWidth + $memberlistWidth);
 }
 
@@ -29,7 +29,7 @@
 }
 
 // Header shadow
-.chat_fe669e::before,
+.chat_f75fb0::before,
 .content_a7d72e::before {
     display: none;
 }

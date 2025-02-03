@@ -1,48 +1,22 @@
 @use "../../vars" as *;
 
 // Message box
-.form_a7d72e:has(.buttons_d0696b) {
-    margin-bottom: 40px;
+.form_f75fb0:has(.buttons__74017) {
+    left: -12px;
+    border-radius: 8px;
 }
 
-// Move message box buttons to mimic inventory tabs at bottom
-.buttons_d0696b {
-    background: $bgTint;
-    position: fixed;
-    top: unset;
-    bottom: 0;
-    right: calc($chatRightOffset + 5px);
-    width: $chatWidth;
-    height: $chatButtonsHeight;
-    gap: 8vw;
-    justify-content: center;
-    padding-left: 0;
-
-    $iconSize: 24px !important;
-
-    // GIft, gif, sticker
-    .lottieIcon_f73ef7,
-        // Send message
-        .sendIcon_a06035 {
-        width: $iconSize;
-        height: $iconSize;
-    }
-
-    // Emoji picker
-    .spriteContainer_af14ca {
-        --custom-emoji-sprite-size: #{$iconSize};
-    }
-
-    // Line before send message button
-    .separator_a06035::before {
-        display: none;
-    }
+.inner__74017 {
+    left: 32px;
+    right: 32px;
+    border-radius: 8px;
 }
 
-.chat_a7d72e:not(:has(.container_cbd271)) .buttons_d0696b {
+
+.chat_f75fb0:not(:has(:is(.container_c8ffbb, .container__7641b))) .buttons__74017 {
     width: calc($chatWidth + $memberlistWidth);
 }
 
-.channelAppLauncher_df39bd {
+.channelAppLauncher_e6e74f {
     display: none;
 }
