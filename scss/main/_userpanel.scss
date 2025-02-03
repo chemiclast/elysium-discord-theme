@@ -1,6 +1,6 @@
 @use "../vars" as *;
 
-.panels_a4d4d9 {
+.panels_c48ade {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -9,14 +9,14 @@
     --background-secondary-alt: none;
 }
 
-.container_b2ca13 {
+.container__37e49 {
     flex-direction: column-reverse;
     height: auto;
     padding: 0;
 }
 
 // User info
-.avatarWrapper_b2ca13 {
+.avatarWrapper__37e49 {
     margin-right: 0;
     margin-left: 0;
     padding-left: 0;
@@ -31,7 +31,7 @@
     }
 
     // Username and nickname section
-    .nameTag_b2ca13 {
+    .nameTag__37e49 {
         position: absolute;
         bottom: 10px;
         right: 10px;
@@ -39,12 +39,12 @@
         opacity: 0;
         transition: opacity 0.3s;
     }
-    &:hover .nameTag_b2ca13 {
+    &:hover .nameTag__37e49 {
         opacity: 1;
     }
 
     // Avatar container
-    .avatar_b2ca13 {
+    .avatar__37e49 {
         width: 130px !important;
         height: 185px !important;
         // It's harry!
@@ -53,7 +53,7 @@
         border-radius: 0;
 
         // Outermost svg
-        .svg_c51b4e {
+        .svg__44b0c {
             width: inherit !important;
             height: inherit !important;
 
@@ -65,7 +65,7 @@
                 height: 40px;
             }
 
-            .avatarStack_c51b4e {
+            .avatarStack__44b0c {
                 display: none;
             }
 
@@ -83,7 +83,7 @@
 }
 
 // Controls
-.avatarWrapper_b2ca13 + .horizontal_bba380 {
+.avatarWrapper__37e49 + .horizontal_bba380 {
     background: $bgTint;
     width: 100%;
     height: 40px;

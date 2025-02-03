@@ -1,18 +1,18 @@
 @use "../../vars" as *;
 
-.sidebar_a4d4d9 {
+.sidebar_c48ade {
     background: $bgTintLight;
     position: relative;
     left: $userpanelWidth + $distance;
     width: $channellistWidth;
 }
 
-div.content_a4d4d9 .sidebar_a4d4d9:has(nav.container_ee69e0) {
+div.content_c48ade .sidebar_c48ade:has(ul.content__99f8c) {
     width: $channellistWidth !important;
 }
 
 // Server channels list
-.container_ee69e0 {
+.content__99f8c {
     $banner-height: calc(($channellistWidth - (2 * 10px) - (2 * 0.5vh)) / 240 * 135);
 
     // Banner
